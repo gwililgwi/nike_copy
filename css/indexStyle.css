@@ -1,0 +1,263 @@
+
+header{
+    position: fixed;
+    right : 0;
+    left : 0;
+    top : 0;
+    z-index : 999;
+
+    display : flex;
+    justify-content : space-between;
+    margin : 0px 0px 5px;
+    padding : 0px 40px;
+    background-color : rgba(255, 255, 255, 0.3);
+}
+header h1{
+    margin : 10px 0px 0px;
+}
+header li{
+    display : inline-block;
+    margin : 0px 10px;
+}
+header a{
+    text-decoration : none;
+    color : black;
+}
+header .search1{
+    margin : 15px 0px;
+    padding : 10px 20px;
+    border-radius : 20px;
+    background-color : rgb(236, 236, 236);
+    color :rgb(125, 125, 125);
+    border : none;
+}
+body{
+    margin : 0;
+}
+#img_padding{
+    margin-top : 65px;
+}
+.main{
+    margin : 0px 40px;
+}
+.img1{
+    max-width : 100%;
+}
+.first, .second, .third, .fourth, .fifth, .sixth{
+    text-align : center;
+}
+.title_text, .subtitle_text, .input[type="button"], .sub_ex, figcaption{
+    font-family : 'Noto Sans CJK KR', sans-serif;
+    margin : 0;
+}
+.title_text{
+    font-size : 42px;
+    font-weight : 700;
+    margin-top : 30px;
+}
+.subtitle_text{
+    font-size : 15px;
+    font-weight : 400;
+    margin-top : 8px;
+}
+.sub_ex{
+    text-align : left;
+    font-size : 22px;
+    font-weight : 500;
+    margin-bottom : 20px;
+}
+.pageButton{
+    border : none;
+    border-radius : 20px;
+    background-color : black;
+    color : white;
+    padding : 10px 30px;
+    font-size : 15px;
+    font-weight : 600;
+    margin : 25px 0px 100px;
+    margin-right : 5px;
+    cursor : pointer;
+}
+input:focus{
+    outline : none;
+}
+video{
+    width : 100%;
+}
+.seventh{
+    display : flex;
+    justify-content : space-between;
+    margin-bottom : 100px;
+}
+.figure_img9_1, .figure_img9_2{
+    margin : 0;
+    position : relative;
+}
+.img9Figcap{
+    position : absolute;
+    left : 50px;
+    bottom : 50px;
+    color : white;
+    font-weight : 600;
+    font-size : 1.2rem;
+}
+.seventh img{
+    width : 98%;
+}
+.figButton{
+    border : none;
+    border-radius : 20px;
+    background-color : white;
+    color : black;
+    padding : 10px 32px;
+    font-size : 15px;
+    font-weight : 900;
+    margin-top : 25px;
+    cursor : pointer;
+}
+.eighth{
+    display : flex;
+    justify-content : space-between;
+
+    margin-bottom : 200px;
+}
+.eighth img{
+    width : 97%;
+}
+.eighthF{
+    margin : 0;
+    position : relative;
+}
+.eighth-cap{
+    position : absolute;
+    top : 40px;
+    left : 50px;
+
+    font-size : 1.2rem;
+    font-weight : 400;
+}
+
+footer{
+    background-color : rgb(17, 17, 17);
+    color : white;
+    font-family : 'Noto Sans CJK KR', sans-serif;
+
+    
+    display : grid;
+    grid-template-rows : 400px 1fr 150px;
+}
+footer div a{
+    text-decoration : none;
+}
+footer ul{
+    list-style : none;
+    padding : 0;
+}
+.footer01{
+    display : flex;
+    gap : 150px;
+    justify-content : center;
+    margin-top : 50px;
+}
+.footer01-1 ul li a{
+    font-size : 0.9rem;
+    font-weight : 300;
+    line-height : 28px;
+    color : white;
+}
+.footer01-2 ul li a, .footer01-3 ul li a{
+    font-size : 0.7rem;
+    line-height : 27px;
+    font-weight : 100;
+    color :rgb(161, 161, 161);
+}
+.footer01-2 ul div, .footer01-3 ul div, .footer01-4 ul div{
+    font-size : 0.7rem;
+    font-weight : 600;
+}
+
+.footer02{
+    border-top : 0.1px solid rgba(255, 255, 255, 0.2);
+    border-bottom : 0.1px solid rgba(255,255,255,0.2);
+    padding : 15px 40px;
+
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+}
+.footer02 a{
+    color : white;
+    font-size : 10px;
+    font-weight : lighter;
+}
+.footer02-1, .footer02-2{
+    display : flex;
+    gap : 15px;
+}
+.footer02 .footer02Smalltype{
+    font-size : 10px;
+    color :rgb(161, 161, 161);
+
+}
+.footer03{
+    padding-top : 30px;
+    display : flex;
+    justify-content : center;
+    gap : 50px;
+    font-size : 12px;
+    font-weight : lighter;
+    color :rgb(161, 161, 161);
+    line-height : 21px;
+}
+.footer03 div a{
+    color : white;
+}
+#footer03-underline{
+    text-decoration : underline;
+}
+.footer04-mediaQuery{
+    display : none;
+}
+
+@media (max-width : 760px) {
+    header ul li{
+        display : none;
+    }
+    .footer01, .footer02, .footer03{
+        display : none;
+    }
+    footer{
+        display : block;
+        padding : 30px 0;
+    }
+    .footer04-mediaQuery{
+        display : block;
+        color : white;
+        text-align : center;
+    }
+    .eighth{
+        margin-bottom : 100px;
+    }
+    .final{
+        font-size : 12px;
+        font-weight : lighter;
+    }
+    .final-time{
+        padding-top : 15px;
+        font-size : 14px;
+        font-weight : bolder;
+    }
+    .sub_ex{
+        text-align : center;
+    }
+    .eighth figcaption{
+        display : none;
+    }
+    .seventh figcaption{
+        display : none;
+    }
+    .main{
+        margin-left : 20px;
+        margin-right : 20px;
+    }
+}
